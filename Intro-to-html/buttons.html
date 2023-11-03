@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Buttons practice
+  </title>
+  <link rel="Stylesheet" href="Styles/buttons.css">
+</head>
+<body><button class="Subscribe-button">
+  SUBSCRIBE 
+</button>
+
+<button class="Join-button">
+  JOIN
+</button>
+
+<button class="Tweet-button">
+  Tweet
+</button>
+
+<p> Css is similar to html by simply giving instructions to the computer and then the computer follows the instructions step by step</p>
+
+<p>Just like html ,Css has its syntax rules</p>
+
+<p> 
+  Css Selector-Tells the computer which elements on the page we're targeting with the Css code - in this case we're targeting all  buttons on the page and change background color of the buttons to red 
+</p>
+<p>Inside the curry blackets there are rules that have to be followed <br>
+   (1) The text to the left of the colon is called the Css property - It tells the computer what we're changing.<br>
+   (2)To the right of the colon is the Css value and it tells the computer- what we are changing the property to - where by in this case we're changing the property background color to red<br>
+   (3) The colon is just for seperating both the property and the value <br>
+   (4) The semi colon at the right is just like a period in english.In english you end sentences with period while in Css you end a style with a semi colon.
+  </p>
+  <p>We can actually add multiple styles inside these curry brackets,like for example adding the text color to white</p>
+  <p>px- means pixels,pixels are very common units of measurements in the digital world,for instance the image sizes,vedio sizes & Screen sizes.</p>
+  <p>
+    The rgb value is another more precise way of measuring color than just using a word like red or white<br>
+    The way rgb works is that, pretty much every color can be created using a combination of red,Green and blue,so that's what this syntax represent.r = how much red,g = how much green,b = how much blue.<br>The rgb values have both minimum and maximum values. Min= 0,Max= 255<br>When all the values are set to max they give a white color and when set to min they give a black color.
+  </p>
+  <p>
+    If you want to discover more Css properties you can search for whatever you want in google.As you use Css more and more you gona have to search things which you dont know in google and get used to searching for answers (w3schools)
+  </p>
+  <p>The html class attribute helps in lablering html elements eg. class ="subscibe-button"<br>
+  To targert a class in Css we can start with a dot then type out the the class name.So according to Css syntax if we start a code with a dot, it means we're going to target a class name instead of an element name.
+  </p>
+  <p>In Css space is called margin, So to add space you gonna add some mirgin on any side - in this case on the righthand side of the subscribe button
+
+  </p>
+
+  <p>To create a tweet button you go back to the code and remember the general technique is to <br> 
+  (1)Create the element with html<br>
+  (2)Style it with Css one by one
+  </p>
+<p>In this method of creation of buttons just by way of looking at another image to copy it you use the above steps precisely </p>
+<p> You can do botton exercices by going to (Supersimple.dev/exercices/buttons)</p>
+<p>Hovers Translation and shadows</p>
+
+<p>
+  In this lession you will learn about some intermediate Css skills such as Hovers,Transition and shadows
+</p>
+<p>
+  For most buttons yuo see on the internet if we hover over them with your mouse,they change their styles slightly ,some of them get darker while some of them get lighter we gonna learn that in our code,we gonna chose the buttons that created previously to apply these effects
+</p>
+
+<p> To work on the hover styles for the subscriber button,Go to the code and find the styles for the subscribe button</p>
+
+<p>
+  To create a hover effect you need to create a new block of Css,Use the ".subscribe-button:hover{} inside these blackets are styles that will apply only when we hover that's what colon hover means for example you can set the background-color to green save the file and refresh the page"
+</p>
+<p>
+  When you hover over the button it changes to green if you are not hovering over all the other styles apply,so if you are hovering over the button, the new styles apply in addition to the previous styles 
+</p>
+<p> This colon hover is known as the PSEUDO-CLASS, it basically adds extra styles in a certain situation</p>
+<P>Another example of a pseudo-class is .subscribe-button:active{} So the active pseudo class activates when we click on the element,for example when we click on the element we can set the background-color to blue</P>
+<p>
+  According to the design we are copying from when we hover over the button it be comes lighter and when you click it becomes even more lighter
+</p>
+<p> so the way to make the button lighter is using a new property so now you can delete the previous pseudo class styles save and refresh a now apply the new one
+</p>
+<p>We are gonna choose a Css style called opacity.oPacity tells us how see through a html element is.It takes a value between 0 & 1.The value of 1 means that the element is completly normal and as you decrease the opacity the element starts to fade. So the opacity is used to fade out an element.
+</p>
+<P>To work on the joint button,we are going to target the joint button with a dot and add a pseudo class called hover</P>
+
+<p>
+   Set background-color to the previous text color i.e copy & paste and then set the text color to your background color and switch them up. Also go ahead and add an active pseudo class to this one as well
+</p>
+<p> So that is how you set hover style and other pseudo classes with with Css code</p>
+
+<p>
+  Next is to learn how to transition between hover & active styles smoothly,So to do that you gonna go back to subcribe button first and add a property called transition. Transition takes two values
+  <br>(1)Is what we wonna transition,like in our case we wonna transtion the opacity smoothly
+  <br>(2)How long the transition will take, for instance 0.15s.
+  do the same to the joint button which you can start with transitioning the background-color and then the text color.
+</p>
+<p> You can just add multiple properties to transition all you just have to do is to seperate it with a comma.</p>
+<p> 
+  That's basically how transition works. Sometimes when you are tempted to put the transition property into hover section so that you think that you want to transition when you hover. Now the problem with this is that if you refresh & you hover over the button evrything looks good but as soon as you hover out the style changes immediately,and that's because remember these stlyls apply only when you hovering.
+  So when you are hovering then you have a transition & as soon as you take off the hovering it is the same thing as having no hovering at all.That is one common pitfall of the transition property.So always make sure you put transition in your base transition style.
+</p>
+<p> The last thing we are going to learn inthis lession is how to create shadows</p>
+<p>
+  The shadow is another Css property.You you gonna go to tweet button styles.So the property for shadow is box-shadow,box shadow actualy takes four values,you can set all the four values to 0 0 0 [black] and then change them one by one to see how they work.<br>
+  (1)The first position determines the horizontal position of the shadow<br>
+  (2)The second value sets the verticle positin of the value<br>
+  (3)The third value here is the blurr
+  Usually shadows are of a dacker shade of whatever they are covering. So to create a color like that we gonna need a new way of measuring colour.i.e rgba which is the same thing as rgb except that there is an "a" value.this a value means the opacity of the color or how see through it is.<br>
+  (4)The fourth value is the 'a' value,when this value is set to 1 it becomes purely black.If you decrease the a value the color becomes more faded out and more and more transparent.
+  The final step of this lession is to only make the shadow appear when you hover over the button. 
+  Remember what you learnt previously by using a dot to target the class,i.e .tweet-button:hover, then move your shadow or cut and paste it in hover pseudo class.
+  The last thing we gonna do is to transition the shadow by just adding the transition property to box-shadow
+</p>
+
+<p>Chrome Dev Tools & Css Box Model</p>
+
+<p> In this lessions you are going to learn one the most used tools for web development called the chrome dev tools which you can use to get perfect colors for your buttons</p>
+<p>
+  what are the chrome dev-tools - Go to your website and right click in the empty area and the click inspect and that will open up the dev- tools.<br>
+  The cool thing about this is you can now see all the html on your page and for instant when click the down allow to the left side of the   word body, you can see all the buttons,<br>
+  This is a great way to vizualise the html as well as the Css on your page i.e by clicking to one of these buttons you can see all the Css that is applied to the button,So what is even better you can open the dev-tools in any website that you want.<br>
+  You can actually open it in supersimple .dev and see all the html on the website as well as all the Css.<br>
+  The pointer icon in the top left ,so instead of tying to find all these buttons in all the html, so if you click on that pointer icon and  it will actually let you hover any element on the web page and show it down there,if you for example hover over the tweet button and click  it, it will find the element for you in the html,and the styles used in Css as well.<br>
+  If you click on stryles in the Css tab and look into the background color that is set on the button so that you can get a perfect  bacground color. So one thing to note is that the background color is another way of measurinng color,previously you learnt about rgb and  now you have another way of measuring color called Hex.Spacing is the same as rgb so the first two characters represent how much red,the   second two how much green and the the third two,how much blue.<br>
+  So with alitle bit of math you can convert hex to rgb,You just google a hex to rbg calculator & if you find any calculator you use it to find the hex values.Therefore you can just copy the hex value in to the calculator and then convert it to give you the rgb value.Se hex is just another way of measuring color.
+</p>
+<p>
+  The next feature you wonna know in dev tools is the computed tab,this tab actualy shows all the final styles that are applied to the element.You can actually scroll down and find the background color in rgb value and copy and paste it to your code to get an exact color instead of trying to guess it like you did before,remember to save & refresh<br>
+  The same thing happens for the joint button.So that is how you use dve-tools to get the perfect color for the html elements.
+</p>
+<p>The Css Box Model-Allows you to add space between elements like subscribe button and join buttons as well as adding space inside that element to make it bigger.<br>
+  The first part of the box model is spacing on the outside of the element,Which is called 'Margin'.which you have aredy worked with it aready in your code.So you can add margin to all four directions i.e top,right,bottom & left. Basically margin allows you to add spacing on the outside of the element.<br>
+  The second part of the box model is spacing on the inside of the box element,i.e spacing around text. So currently if you look at your code you are setting the height and the width of your buttons,and this is not actually a good idea,The reason bieng for example if you scroll to the join button and change your text to read 'Join my channel',save it & refresh.<br>
+  You will notice that the text is overflowing the button to the outside, and that is because if you scroll up,you were actually setting the height and the width. That means you were forcing the height of the box to be 36px and a width of 62px but now for your new case the content is too big, So what you wonna do is remove both lines for the height and width in your code,save and refresh,and by default the box will adjusts itself automatically based on the content. So now instead of setting height & the width you are going to achieve the same thing by adding the spacing on the inside of the button.And the spacing inside of the button is called 'Padding'
+  If you go to your code and add a panding of 30px,save & refresh, you will see that the padding adds spacing on the inside of the button.<br>
+  Just like padding you can set padding in all four directions,like adding 'padding-top' by 20px.So you can you use the chrome dev-tools that you used earlier to visualise the margin & padding over your element.
+</p>
+<p>
+  If you go to blank area of your web page,right click and inspect,then click on the top left pointer icon,click the suscribe button,Go to the computed tab,So that section is bsically the 'box model' where by you have 'the margin' which is the space on the outside of the element which is highlighted in orange,'The boder' and the 'padding'which is the space on the inside of an element and highlighted in green.Buttons by default have  padding of 6px on the Left & Right and 1px on the Top & bottom.<br>
+  Click the top left pointer button again,Go to the join button and click,You will find thAt in this button you have a padding of 20px which you have on your code,a padding of 30px which is in your code,a defult padding of 6px on the right and 1px at the bottom.A border of 1px wide which you can see in your code. So all of these combined'margin,border & padding' make up the Css box model- which basically determines how much an element takes up on the page and how far it is from other elements.<br>
+  So now that you have learnt about Css box model, You can use it to recreate your design.<br>
+  If you look at your code in the subscribe and other buttons,you used the height and the width,You can now get rid of them save & refresh and replace them with the box model.So you will notice that the button goes back to whatever it was before.
+</p>
+<p>
+  So now add padding to the button so that it muches the design.If you add padding-top of10px,add the same to the bottom,save & refresh so now have space on top and at the bottom.Also add padding of 16px to the left and right,save & refresh.<br>
+  The good thing about padding is if we change the text in any way, the button will resize with the text but it will keep the spacing on the inside.So using padding is a better alternative to hight and width.<br>
+  You can now go ahead and move the buttons back close together by changing the margin from 30px back to 8px save and refresh.
+  You will also notice that the buttons are not aligned with each other this is because by default the browser alignes the buttons based on the text,i.e the text in the buttons is aligned but the buttons are not,This is because the browsers in the beggining were text based.<br>
+  Now to overwrite this behaviour and to align everything to the top like we had before,You can go to Css and add a property called,'verticle-align' and set it to top,save & refresh. Now do the same to the tweet button as well. Everything is properly aligned again.<br> to work on the join button,you can now remove the extra text save and refresh, go to the Css button and adjust the padding to match the subscribe button by copy & pasting from the subscribe button or adjusting utill they are even if they are not the same size after pasting.<br>
+  Now you can go ahead and change the tweet button.
+  So that is the Css Box model.Every element can have space on the outside called,"margin",Space on the inside called"padding" as well as the border,and these properties determine how much space an element takes up on the page.
+</p></body>
+</html>
+
+
+

@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../thumbnails"
+		},
+		{
+			"path": "../channel-Pictures"
+		},
+		{
+			"path": "../icons"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "thumbnails"
+	}
+}

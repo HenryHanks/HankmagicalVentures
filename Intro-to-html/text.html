@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Text practice</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="Stylesheet" href="Styles/text.css">
+  </head>
+  <body>
+    <h1>lession 5</h1>
+    <h2>Text styles</h2> 
+    <p class="vedio-title">
+      Talking Tech and AI with Google CEO Sundar Pichai!
+  </p>
+  
+  <p class="vedio-stats">
+    3.4M views &#183; 6 months ago
+  </p>
+  <p class="Vedio-Author">
+    Marquies Browlee &#10003;
+  </p>
+  
+  <p class="Vedio-description">
+    Talking tech and AI on the heels of Google I/O. Also a daily driver phone reveal from Google's CEO. Shoutout to Sundar!
+  </p><br>
+  
+  <p class="apple-text">
+    Shop early for the best selection of holiday favourites.<span class="shop-link">Shop now &gt; </span> 
+  </p><br>
+  
+  <p>
+    Shop early for the <strong>best selection</strong>  of <u>holiday</u> favourites.<span class="span-example">Shop now </span> 
+  </p>
+  
+  <p>
+    For most of the course we've been working with buttons,In this lession we gonna work with texts we gonna learn how to style text-Go to 'supersimple.dev/exercises/text' as a sample exercise where you have some texts from 'You tube' and 'Apple' that you can learn how to copy.
+  </p>
+  <p> 
+    First of all create a new html file where you can focus on practising text styles and open the file from the file that contains your code, in your browser using google chrome
+  </p>
+  <p> 
+    If you've ever written a text document before like google docs or microsoft word,You've probably seen a tablet with tools that allows you to modify the styles of your text,May be the font,the text size,Bold,Center in ,etc.<br>
+    In Css we have a style for each of these things-So you can start by going to your code and start creating a text like a paragraph,In this case you can copy & paste the text from the sample exercise,inside your paragraph tag,reorganise it,save & refresh,so that you have a paragraph that you can practice with.<br>
+    Next create a style element so you can write some Css code.Now set a class on this element so that you can target it on this Css,such as 'vedio-title'.Save & refresh and now you can start targeting this class in your Css.Remember to start with a dot to target a class & target vedio-title.<br>
+    So the first thing that you gonna change is the font,& to change the font is to use the Css property called font-family.Websites by defalt use the font called "times new roman" So you are going to change the font to a font called Aerial, save & refresh. <br>
+    To change the font size by using the 'property' "font-size".with like 30px. save & refresh to have a bigger font<br>
+    To make it "Bold" you are going to use "font-weight" property.<br>
+    So as you can see, Css has properties for doing all of these things.And for most of these properties it is pretty easy to google them.For example you can google how to make a font italic.i.e "Css text italic" & with the first result (w3schools) you can copy the result to your Css code.<br>
+    When you want to center the text, Go to you code and type "text-align" & give it a value of center, save it & refresh.
+  </p>
+  <p>
+     Now you can go ahead and copy the next style in your exercise.<br> Remember the general strategy for creating anything that we see,is.<br>(1) First create the element with html & (2) Style with Css one by one.Then go ahead with this exercice.Start by resetting all the styles,sf & Rf.<br>
+     First set the font family to Ariel,Set Font font-weight-bold next  you change the font size like 18px,Set the width for this title in order to force the text to overlap the next line,set it to 300px.<br>
+     To adjust the spacing between lines you use the property called "Line-height"set it to 24px.sf& Rf
+  </p>
+  <p>
+     So you can now on a new paragraph,with about 3.4m views and after creating that you are going to create a html entity.an html entity let you type special characters for example the dots and check marks.To get the html entity for the dot,you gonna google,'html entity middle dot' ,and after you scroll down it will give you a html code that you can copy  paste in to your code and that is going to create a dot in your page.Sf & Rf.Now type out the lest of the text in the same paragraph.<br>
+     Remember the general rule is that you created the element with html, now go ahead and style it with Css by first targeting it.<br>
+     In your Css .eg ".vedio-stats" start with, font-family-Arial,Font-size-14px,change the color.To get the exact color,right click on the white area of the web page,inspect the styles of the element,click on the top left pointer icon, hover over the element and click it, then find all the styles in the computed tab.Scroll down to get the text color copy & pate it in your code.Sf & rf.<bR>
+      Now for the spacing between the two paragraphs, in the previous lession,the spacing outside an element is called margin,But when you look in your code you did"nt set the margin.So the reason is if you right click on the empty area of the page ,click inspect,click the pointer icon,hover over the paragraph,the paragraph already has margin at the top and botom.<bR>
+      If you click on the element and go to computed,The box has 14px at the top & 14px at the bottom and the same for the previous paragraph.And the reason for this is because paragraphs by default come with margin at the top & at the bottom.So that is why there is much spacing between the two paragraphs in your page.<br>
+      So the general processes you're going to the default spacing and then set your own spacing.
+      So go to your code & remove(by adding it to your code) margin-bottom of the title & set it to 0 & also remove the margin at the top of the second paragraph and set it to zero.Sf & Rf. 
+      Now there is no default spacing between them and they are really close together. next you can set the margin in a more precise model like 5px on the previous paragraph. 
+  </p>
+  
+  <p>
+    Move on to the next paragraph and create a new paragraph element with this text inside "Marques Brownlee" For the check mark you're going to use html entities or you can actualy copy & paste it where your browser can allow.Therefore go to google and use html entity checkmark. Scroll down and copy the first one.Sf& Rf<br>
+    You can go ahed and style one by one like before.fontfamily,fontsize,margin.
+  </p>
+  
+    <p>
+      Then you can do the third paragraph,create the element and then style it with Css.
+      You can directly copy the text and pate it into your new paragraph Sf & Rf.<br>
+      First give the class to the text and target it and call it "vedio-description" font-family,font-size,& the color all as before.Sf & Rf.
+      Give it a width to make it wrap around like the design text. with 280px.
+      The last thing you gonna change is the space between the text lines by using "line-height" to 22px and then lastly modify the space btween the two paragraphs by resetting the default margin to zero,for the previos and the current paragraphs.Then set the previous paragraph with margin-bottom = to 20px Sf & Rf.<br>
+      So you have just recreated a nice looking style you can find on You tube .com and the general process that you use is by first creating the element with html and then you style them with Css one by one.<br>
+    </p></body>
+</html>
+
+
+
+
+
+
+
+  
+
